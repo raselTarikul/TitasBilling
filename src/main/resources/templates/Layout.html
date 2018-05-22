@@ -18,6 +18,7 @@
 
     <!-- Custom Fonts -->
     <link th:href="@{/vendor/font-awesome/css/font-awesome.min.css}" rel="stylesheet" type="text/css">
+    <link th:href="@{/css/custome.css}" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -75,7 +76,7 @@
                             <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Account<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="flot.html">View List</a>
+                                    <a href="/accounts">View List</a>
                                 </li>
                                 <li>
                                     <a href="morris.html">Add new</a>
@@ -110,15 +111,11 @@
     <!-- Metis Menu Plugin JavaScript -->
     <script th:src="@{/vendor/metisMenu/metisMenu.min.js}"></script>
 
-    <!-- Morris Charts JavaScript -->
-    <script th:src="@{/vendor/raphael/raphael.min.js}"></script>
-    <script th:src="@{/vendor/morrisjs/morris.min.js}"></script>
-    <script th:src="@{/data/morris-data.js}"></script>
 
     <!-- Custom Theme JavaScript -->
     <script th:src="@{/dist/js/sb-admin-2.js}"></script>
-	<span layout:fragment="customejs">
-	</span>
+	<div layout:fragment="custom-scripts">
+	</div>
 
 </body>
 

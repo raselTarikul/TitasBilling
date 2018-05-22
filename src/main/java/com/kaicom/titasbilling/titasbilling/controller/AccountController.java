@@ -21,5 +21,19 @@ public class AccountController {
 		modelAndView.setViewName("dashboard/AccountList");
 		return modelAndView;
 	}
+	
+	@RequestMapping(value="addaccount", method = RequestMethod.GET)
+	public ModelAndView addAccount(){
+		ModelAndView modelAndView = new ModelAndView();
+		modelAndView.setViewName("dashboard/AddAccount");
+		return modelAndView;
+	}
+	
+	@RequestMapping(value="adddetails", method = RequestMethod.GET)
+	public ModelAndView accountDetails(){
+		ModelAndView modelAndView = new ModelAndView();
+		modelAndView.setViewName("dashboard/AccountDetails");
+		return modelAndView;
+	}
 
 }
